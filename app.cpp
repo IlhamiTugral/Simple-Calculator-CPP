@@ -31,15 +31,15 @@ int main()
 			std::cin >> operation;
 
 			if(operation <= 5)
-            {
-                std::cout << "Birinci Sayi: ";
-                std::cin >> num1;
-                std::cout << "Ikinci Sayi: ";
-                std::cin >> num2;
-                std::cout << std::endl;
-            }else {
-                std::cout << "Gecersiz islem turu" << std::endl;
-            }
+    			{
+				std::cout << "Birinci Sayi: ";
+				std::cin >> num1;
+				std::cout << "Ikinci Sayi: ";
+				std::cin >> num2;
+				std::cout << std::endl;
+			}else {
+				std::cout << "Gecersiz islem turu" << std::endl;
+			}
 
 			switch(operation)
 			{
