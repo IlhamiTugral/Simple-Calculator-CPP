@@ -1,4 +1,4 @@
-# Simple-Calculator-CPP
+# Simple Calculator (C++) / Basit Hesap Makinası (C++)
 C++ ile yazılmış basit hesap makinası
 
 # Özellikler
