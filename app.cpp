@@ -1,11 +1,11 @@
 /*
 Konsol Hesap Makinası Uygulaması
 Author: Ilhami Tugral
-Date: 10/10/19
+Date: 23/12/19 (DD/MM/YY)
 */
 
-#include <iostream>
-#include <cmath>
+#include <iostream> // Konsola yazı yazdırmak için gerekli kütüphanemiz
+#include <cmath> // Matematiksel fonksiyonları uygulamak için gerekli olan kütüphanemiz
 
 int main()
 {
@@ -27,11 +27,13 @@ int main()
 		std::cout << "+-------------------------+" << std::endl;
 		std::cout << "\n" << std::endl;
 
+		// Kullanıcıdan işlem türünü alalım.
 		std::cout << "Islem Turunu Seciniz: ";
 		std::cin >> operation;
 
 		if(operation <= 5)
 		{
+			// Eğer işlem türü 0 değilse kullanıcıdan sayı bilgisi istesin. Yoksa geçsin.
 			if(operation != 0)
 			{
 				std::cout << "Birinci Sayi: ";
@@ -41,31 +43,38 @@ int main()
 				std::cout << std::endl;
 			}
 		}else {
+			// Geçersiz işlem türü olduğu mesajını versin.
 			std::cout << "Gecersiz islem turu" << std::endl;
 		}
 
 		switch(operation)
 		{
+		// Toplama İşlemi
 		case 1:
 			std::cout << num1 << " + " << num2 << " = " << num1 + num2 << std::endl;
 			break;
 
+		// Çıkartma İşlemi
 		case 2:
 			std::cout << num1 << " - " << num2 << " = " << num1 - num2 << std::endl;
 			break;
 
+		// Çarpma İşlemi
 		case 3:
 			std::cout << num1 << " * " << num2 << " = " << num1 * num2 << std::endl;
 			break;
 
+		// Bölme İşlemi
 		case 4:
 			std::cout << num1 << " / " << num2 << " = " << num1 / num2 << std::endl;
 			break;
 
+		// Mod Alma İşlemi
 		case 5:
 			std::cout << num1 << " % " << num2 << " = " << std::fmod(num1, num2) << std::endl;
 			break;
 
+		// Hesap Makinasını Kapatma İşlemi
 		case 0:
 			status = false;
 			std::cout << "\nHesap makinasindan cikiliyor..." << std::endl;
