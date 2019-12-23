@@ -6,4 +6,4 @@ C++ ile yazılmış basit hesap makinası
 * Çıkarma İşlemi
 * Çarpma İşlemi
 * Bölme İşlemi
-* Mod Alma (Bölme sonucunda kalan Bulma)
+* Mod Alma (Bölme sonucunda kalan bulma)
